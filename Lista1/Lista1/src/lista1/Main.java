@@ -8,7 +8,7 @@ package lista1;
 public class Main {
 
     public static void main(String[] args) {
-        /** Testes da Classe Bola **/
+        /** Testes da Classe Bola */
         System.out.println("-- BOLA");
         Bola bolinha = new Bola("amarela", "algodão", 3.2);
         System.out.println("A cor da bola é "+ bolinha.mostraCor());
@@ -16,7 +16,7 @@ public class Main {
         System.out.println("A cor da bola é "+ bolinha.mostraCor());
         System.out.println("");
         
-        /** Testes da Classe Quadrado **/
+        /** Testes da Classe Quadrado */
         System.out.println("-- QUADRADO");
         Quadrado quadradinho = new Quadrado(3);
         System.out.println("O lado do quadrado é "+quadradinho.mostraLado());
@@ -26,7 +26,7 @@ public class Main {
         System.out.println("A área do quadrado após a troca é "+quadradinho.calculaArea());
         System.out.println("");
         
-        /** Testes da Classe Pessoa **/
+        /** Testes da Classe Pessoa */
         System.out.println("-- PESSOA");
         Pessoa vitoria = new Pessoa("Vitória", 19, 51, 160);
         System.out.println("Idade antes de envelhecer: "+vitoria.getIdade());
@@ -45,7 +45,7 @@ public class Main {
         System.out.println("Peso após emagrecer: "+vitoria.getPeso());
         System.out.println("");
         
-        /** Testes da Classe TV **/
+        /** Testes da Classe TV */
         System.out.println("-- TV");
         TV quarto = new TV(7, 3);
         System.out.println("Canal atual: "+quarto.getCanal());
@@ -58,7 +58,7 @@ public class Main {
         System.out.println("Volume após diminuir: "+quarto.getVolume());
         System.out.println("");
         
-        /** Testes da Classe Tamagushi **/
+        /** Testes da Classe Tamagushi */
         System.out.println("-- Tamagushi");
         Tamagushi bichinho = new Tamagushi("Mary", 3, 5, 3);
         System.out.println("A "+bichinho.getNome()+" tem "+bichinho.getIdade()+" anos e está "+bichinho.humor());
@@ -69,7 +69,7 @@ public class Main {
         System.out.println("Após a alteração, a "+bichinho.getNome()+" tem "+bichinho.getIdade()+" anos e está "+bichinho.humor());
         System.out.println("");
         
-        /** Testes da Classe Bomba de Combustível **/
+        /** Testes da Classe Bomba de Combustível */
         System.out.println("-- Bomba de Combustível");
         bombaCombustivel bomba1 = new bombaCombustivel("aditivado", 4.20, 100);
         bombaCombustivel bomba2 = new bombaCombustivel("comum", 4.00, 200);
@@ -81,7 +81,7 @@ public class Main {
         bomba2.abastecerPorValor(300);
         bomba2.abastecerPorLitro(100);
         
-        /** FIM **/
+        /** FIM */
         System.out.println("\n=)\n");
     }
 }
