@@ -23,5 +23,8 @@ public class Main {
         sofrido.aumentoSalarial(8);
         System.out.println("-- Classe Estagiário após o aumento salarial de 8%: ");
         System.out.println(sofrido+"\n");
+
+        /** FIM */
+        System.out.println("\n=)\n");
     }
 }

@@ -34,5 +34,8 @@ public class Main {
         System.out.println(opcao5.imprimeValor()+"\n");
         System.out.println("-- Classe Ingresso Vip CamaroteSuperior | Método toString:");
         System.out.println(opcao5+"\n");
+
+        /** FIM */
+        System.out.println("\n=)\n");
     }
 }
