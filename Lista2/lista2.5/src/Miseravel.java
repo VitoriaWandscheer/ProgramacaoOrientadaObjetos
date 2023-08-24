@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Vitória
+ */
 public class Miseravel extends Pessoa {
     
     public Miseravel(String nome, int idade){

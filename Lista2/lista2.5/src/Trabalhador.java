@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Vitória
+ */
 public class Trabalhador extends Pessoa {
     private int tempoTrabalhado;
     private double salarioMinimo;

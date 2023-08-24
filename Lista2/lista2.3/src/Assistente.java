@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Vitória
+ */
 public class Assistente extends Funcionario{
     protected int numeroMatricula;
 

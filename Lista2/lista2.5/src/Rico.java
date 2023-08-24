@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Vitória
+ */
 public class Rico extends Pessoa{
     private double dinheiro;
 

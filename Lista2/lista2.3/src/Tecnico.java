@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Vitória
+ */
 public class Tecnico extends Assistente{
     private double bonusSalarial;
 

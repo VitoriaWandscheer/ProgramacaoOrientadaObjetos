@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Vitória
+ */
 public class Animal {
     protected String nome, raca;
     protected int position;

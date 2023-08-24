@@ -1,3 +1,7 @@
+/**
+ *
+ * @author Vitória
+ */
 public class Administrativo extends Assistente {
     private String turno;
     private double adicionalNoturno;
