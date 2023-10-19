@@ -2,7 +2,7 @@
  *
  * @author Vitória =)
  * */
-public class ContaCorrente {
+public class ContaCorrente implements Tributavel{
     private int numeroConta;
     private double saldo;
 
@@ -39,6 +39,11 @@ public class ContaCorrente {
     public void depositar(double valor){
         this.saldo = this.saldo + valor;
     }
+
+    @Override
+    public double calculaTributos(){
+        return this.saldo * 0.1;
+    };
 
     @Override
     public String toString() {

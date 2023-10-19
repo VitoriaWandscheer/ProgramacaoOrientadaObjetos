@@ -38,6 +38,11 @@ public class ContaPoupanca extends ContaCorrente{
     }
 
     @Override
+    public double calculaTributos(){
+        return 0;
+    };
+
+    @Override
     public String toString() {
         return "Conta Poupança: " + super.getNumeroConta() +
                 " Saldo: " + super.getSaldo();

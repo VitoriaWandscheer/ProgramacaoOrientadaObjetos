@@ -2,7 +2,7 @@
  *
  * @author Vitória =)
  * */
-public class ContaEspecial extends ContaCorrente{
+public class ContaEspecial extends ContaCorrente {
     private double limite;
 
     public ContaEspecial(int numeroConta, double saldo, double limite) {
@@ -28,6 +28,11 @@ public class ContaEspecial extends ContaCorrente{
             return "_Saldo Insuficiente_";
         }
     }
+
+    @Override
+    public double calculaTributos(){
+        return super.getSaldo() * 0.5;
+    };
 
     @Override
     public String toString() {
