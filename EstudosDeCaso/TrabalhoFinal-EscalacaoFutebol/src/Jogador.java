@@ -34,5 +34,9 @@ public class Jogador extends Pessoa{
         this.time = time;
     }
 
+    @Override
+    public String toString() {
+        return "Jogador [cpf = " + super.getCpf() + ", nome = " + super.getNome() + ", dataNascimento = " + super.getDataNascimento() + ", posicao = " + this.posicao + ", número = " + this.numero + ", time = " + this.time + "]";
+    }
     
 }
