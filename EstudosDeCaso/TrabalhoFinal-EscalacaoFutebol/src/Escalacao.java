@@ -61,8 +61,7 @@ public class Escalacao {
 
     @Override
     public String toString() {
-        return " => Escalacao: \nData e Hora: " + this.partida.getDataHora() + "\nTreinador = " + this.treinador.getNome() + "\nJogadores: " + this.jogadores +" ]";
+        return " => Escalacao: \nData e Hora: " + this.partida.getDataHora() + "\nTreinador = " + this.treinador.getNome() + "\nJogadores:\n" + this.jogadores + "\n";
     }
-    
     
 }
