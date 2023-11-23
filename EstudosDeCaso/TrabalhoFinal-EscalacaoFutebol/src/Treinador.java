@@ -14,4 +14,9 @@ public class Treinador extends Pessoa{
         this.curriculo = curriculo;
     }
 
+    @Override
+    public String toString() {
+        return "Treinador [cpf = " + super.getCpf() + ", nome = " + super.getNome() + ", dataNascimento = " + super.getDataNascimento() + ", curriculo = " + curriculo + "]";
+    }
+
 }
