@@ -10,38 +10,24 @@ public class App {
 
         // Cria Treinadores
         Treinador t1 = new Treinador("22222222222", "Rafael", "01/06/1999", "Já treinou diversos times, e até a seleção brasileira.");
-        System.out.println(t1);
 
         Treinador t2 = new Treinador("44444444444", "Luis", "21/05/1956", "Surfista se aventurando no futebas");
-        System.out.println(t2);
-
-        System.out.println();
 
 
         //Cria Times
         Time time1 = new Time(1111, "Esperança", "Estadio da Alegria", t1);
-        System.out.println(time1);
 
         Time time2 = new Time(2222, "Sol", "Estadio da Luz", t2);
-        System.out.println(time2);
-
-        System.out.println();
 
 
         // Cria Jogadores
         Jogador j1 = new Jogador("11111111111", "Vitoria", "24/04/2002", "Goleira", "10",time1);
-        System.out.println(j1);
 
         Jogador j2 = new Jogador("33333333333", "Dayane", "01/04/2000", "Atacante", "8", time1);
-        System.out.println(j2);
 
         Jogador j3 = new Jogador("55555555555", "Estevam", "24/04/2002", "Goleiro", "7", time2);
-        System.out.println(j3);
 
         Jogador j4 = new Jogador("66666666666", "Pedro", "01/04/2000", "Atacante",  "10", time2);
-        System.out.println(j4);
-
-        System.out.println();
 
 
         // Cria Partida
