@@ -58,5 +58,11 @@ public class Escalacao {
     public void setJogadores(ArrayList<Jogador> jogadores) {
         this.jogadores = jogadores;
     }
+
+    @Override
+    public String toString() {
+        return " => Escalacao: \nData e Hora: " + this.partida.getDataHora() + "\nTreinador = " + this.treinador.getNome() + "\nJogadores: " + this.jogadores +" ]";
+    }
+    
     
 }
