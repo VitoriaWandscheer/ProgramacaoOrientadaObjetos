@@ -32,4 +32,9 @@ public class Partida {
         this.local = local;
     }
 
+    @Override
+    public String toString() {
+        return "Partida [idPartida = " + idPartida + ", dataHora = " + dataHora + ", local = " + local + "]";
+    }
+
 }
