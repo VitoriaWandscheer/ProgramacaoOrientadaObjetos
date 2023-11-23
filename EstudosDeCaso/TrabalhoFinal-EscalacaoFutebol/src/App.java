@@ -9,15 +9,15 @@ public class App {
 
 
         // Cria Treinadores
-        Treinador t1 = new Treinador("22222222222", "Rafael", "01/06/1999", "Já treinou diversos times, e até a seleção brasileira.");
+        Treinador treinador1 = new Treinador("22222222222", "Rafael", "01/06/1999", "Já treinou diversos times, e até a seleção brasileira.");
 
-        Treinador t2 = new Treinador("44444444444", "Luis", "21/05/1956", "Surfista se aventurando no futebas");
+        Treinador treinador2 = new Treinador("44444444444", "Luis", "21/05/1956", "Surfista se aventurando no futebas");
 
 
         //Cria Times
-        Time time1 = new Time(1111, "Esperança", "Estadio da Alegria", t1);
+        Time time1 = new Time(1111, "Esperança", "Estadio da Alegria", treinador1);
 
-        Time time2 = new Time(2222, "Sol", "Estadio da Luz", t2);
+        Time time2 = new Time(2222, "Sol", "Estadio da Luz", treinador2);
 
 
         // Cria Jogadores
@@ -30,25 +30,19 @@ public class App {
         Jogador j4 = new Jogador("66666666666", "Pedro", "01/04/2000", "Atacante",  "10", time2);
 
 
-        // Cria Partida
-        Partida partida1 = new Partida(54321, "17/11/2023 20:00", "Estadio da Alegria");
-        // partida1.addEscalacao(escalacao1);
-        // partida1.addEscalacao(escalacao2);
-        System.out.println(partida1);
-
-        System.out.println();
-
-
         // Cria Escalação
-        Escalacao escalacao1 = new Escalacao(54321, partida1, t1, time1);
+        Escalacao escalacao1 = new Escalacao(time1);
         escalacao1.addJogador(j1);
         escalacao1.addJogador(j2);
-        System.out.println(escalacao1);
 
-        Escalacao escalacao2 = new Escalacao(98743, partida1, t2, time2);
+        Escalacao escalacao2 = new Escalacao(time2);
         escalacao2.addJogador(j3);
         escalacao2.addJogador(j4);
-        System.out.println(escalacao2);
+
+        // Cria Partida
+        Partida partida1 = new Partida("17/11/2023 20:00", "Estadio da Alegria", escalacao1, escalacao2);
+
+        System.out.println(partida1);
 
         System.out.println();
 

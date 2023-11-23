@@ -1,46 +1,16 @@
 import java.util.ArrayList;
 
 public class Escalacao {
-    private int idEscalacao;
-    private Partida partida;
-    private Treinador treinador;
     private Time time;
     private ArrayList<Jogador> jogadores;
 
-    public Escalacao(int idEscalacao, Partida partida, Treinador treinador, Time time) {
-        this.idEscalacao = idEscalacao;
-        this.partida = partida;
-        this.treinador = treinador;
+    public Escalacao(Time time) {
         this.time = time;
         this.jogadores = new ArrayList<Jogador>();
     }
 
     public void addJogador(Jogador jogador){
         this.jogadores.add(jogador);
-    }
-
-    public int getIdEscalacao() {
-        return idEscalacao;
-    }
-
-    public void setIdEscalacao(int idEscalacao) {
-        this.idEscalacao = idEscalacao;
-    }
-
-    public Partida getPartida() {
-        return partida;
-    }
-
-    public void setPartida(Partida partida) {
-        this.partida = partida;
-    }
-
-    public Treinador getTreinador() {
-        return treinador;
-    }
-
-    public void setTreinador(Treinador treinador) {
-        this.treinador = treinador;
     }
 
     public Time getTime() {
@@ -61,7 +31,14 @@ public class Escalacao {
 
     @Override
     public String toString() {
-        return " => Escalacao: \nData e Hora: " + this.partida.getDataHora() + "\nTreinador = " + this.treinador.getNome() + "\nJogadores:\n" + this.jogadores + "\n";
+
+        String listaJogadores = "";
+
+        for (Jogador jogador : this.jogadores){
+            listaJogadores = listaJogadores + "  (" + jogador.getNumero() + ") " + jogador.getNome() + ": " + jogador.getPosicao() + "\n";
+        }
+
+        return " => " + this.time.getNome() +"\nTreinador: " + this.time.getTreinador().getNome() + "\nJogadores:\n" + listaJogadores;
     }
     
 }

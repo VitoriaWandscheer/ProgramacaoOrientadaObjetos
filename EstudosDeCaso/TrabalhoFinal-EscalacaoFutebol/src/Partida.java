@@ -1,19 +1,12 @@
 public class Partida {
-    private int idPartida;
     private String dataHora, local;
+    private Escalacao escalacao1, escalacao2;
 
-    public Partida(int idPartida, String dataHora, String local) {
-        this.idPartida = idPartida;
+    public Partida(String dataHora, String local, Escalacao escalacao1, Escalacao escalacao2) {
         this.dataHora = dataHora;
         this.local = local;
-    }
-
-    public int getIdPartida() {
-        return idPartida;
-    }
-
-    public void setIdPartida(int idPartida) {
-        this.idPartida = idPartida;
+        this.escalacao1 = escalacao1;
+        this.escalacao2 = escalacao2;
     }
 
     public String getDataHora() {
@@ -32,9 +25,40 @@ public class Partida {
         this.local = local;
     }
 
+    public Escalacao getEscalacao1() {
+        return escalacao1;
+    }
+
+    public void setEscalacao1(Escalacao escalacao1) {
+        this.escalacao1 = escalacao1;
+    }
+
+    public Escalacao getEscalacao2() {
+        return escalacao2;
+    }
+
+    public void setEscalacao2(Escalacao escalacao2) {
+        this.escalacao2 = escalacao2;
+    }
+
     @Override
     public String toString() {
-        return "Partida [idPartida = " + idPartida + ", dataHora = " + dataHora + ", local = " + local + "]";
+        System.out.println("--------------------------------");
+        System.out.println("----------- Partida ------------");
+        System.out.println("--------------------------------");
+        System.out.println(this.escalacao1.getTime().getNome() +" X " + this.escalacao2.getTime().getNome());
+        System.out.println("--------------------------------");
+        System.out.println("Data e Hora: " + this.dataHora);
+        System.out.println("--------------------------------");
+        System.out.println("Local:" + this.local);
+        System.out.println("--------------------------------");
+        System.out.println("---------- Escalações ----------");
+        System.out.println("--------------------------------");
+        System.out.println(this.escalacao1);
+        System.out.println("--------------------------------");
+        System.out.println(this.escalacao2);
+
+        return "--------------------------------";
     }
 
 }
