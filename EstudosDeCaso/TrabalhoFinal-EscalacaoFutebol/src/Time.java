@@ -42,4 +42,9 @@ public class Time {
         this.treinador = treinador;
     }
 
+    @Override
+    public String toString() {
+        return "Time [ nome = " + this.nome + ", estadio = " + this.estadio + ", treinador = " + this.treinador + "]";
+    }
+
 }
