@@ -1,7 +1,7 @@
 public class Jogador extends Pessoa{
-    String posicao;
-    String numero;
-    Time time;
+    private String posicao;
+    private String numero;
+    private Time time;
 
     public Jogador(String cpf, String nome, String dataNascimento, String posicao, String numero,Time time) {
         super(cpf, nome, dataNascimento);

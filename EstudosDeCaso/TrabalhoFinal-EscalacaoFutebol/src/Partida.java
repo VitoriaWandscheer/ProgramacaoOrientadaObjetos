@@ -1,6 +1,6 @@
 public class Partida {
-    int idPartida;
-    String dataHora, local;
+    private int idPartida;
+    private String dataHora, local;
 
     public Partida(int idPartida, String dataHora, String local) {
         this.idPartida = idPartida;

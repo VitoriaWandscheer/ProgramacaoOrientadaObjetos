@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class Escalacao {
-    int idEscalacao;
-    Partida partida;
-    Treinador treinador;
-    Time time;
-    ArrayList<Jogador> jogadores;
+    private int idEscalacao;
+    private Partida partida;
+    private Treinador treinador;
+    private Time time;
+    private ArrayList<Jogador> jogadores;
 
     public Escalacao(int idEscalacao, Partida partida, Treinador treinador, Time time) {
         this.idEscalacao = idEscalacao;
@@ -19,4 +19,7 @@ public class Escalacao {
         this.jogadores.add(jogador);
     }
     
+    public void getPartida(){
+        
+    }
 }

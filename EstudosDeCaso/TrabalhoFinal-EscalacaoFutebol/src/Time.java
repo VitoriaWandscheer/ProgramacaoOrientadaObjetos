@@ -1,8 +1,8 @@
 
 public class Time {
-    int idTime;
-    String nome, estadio;
-    Treinador treinador;
+    private int idTime;
+    private String nome, estadio;
+    private Treinador treinador;
     
     public Time(int idTime, String nome, String estadio, Treinador treinador) {
         this.idTime = idTime;

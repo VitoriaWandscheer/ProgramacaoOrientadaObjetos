@@ -1,5 +1,5 @@
 public class Treinador extends Pessoa{
-    String curriculo;
+    private String curriculo;
 
     public Treinador(String cpf, String nome, String dataNascimento, String curriculo) {
         super(cpf, nome, dataNascimento);
