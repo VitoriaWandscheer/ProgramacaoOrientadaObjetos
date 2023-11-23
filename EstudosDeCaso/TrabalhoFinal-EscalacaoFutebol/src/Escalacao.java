@@ -18,8 +18,45 @@ public class Escalacao {
     public void addJogador(Jogador jogador){
         this.jogadores.add(jogador);
     }
-    
-    public void getPartida(){
-        
+
+    public int getIdEscalacao() {
+        return idEscalacao;
     }
+
+    public void setIdEscalacao(int idEscalacao) {
+        this.idEscalacao = idEscalacao;
+    }
+
+    public Partida getPartida() {
+        return partida;
+    }
+
+    public void setPartida(Partida partida) {
+        this.partida = partida;
+    }
+
+    public Treinador getTreinador() {
+        return treinador;
+    }
+
+    public void setTreinador(Treinador treinador) {
+        this.treinador = treinador;
+    }
+
+    public Time getTime() {
+        return time;
+    }
+
+    public void setTime(Time time) {
+        this.time = time;
+    }
+
+    public ArrayList<Jogador> getJogadores() {
+        return jogadores;
+    }
+
+    public void setJogadores(ArrayList<Jogador> jogadores) {
+        this.jogadores = jogadores;
+    }
+    
 }
