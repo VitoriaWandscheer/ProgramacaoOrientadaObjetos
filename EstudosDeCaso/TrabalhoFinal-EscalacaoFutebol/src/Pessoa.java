@@ -7,6 +7,16 @@ public abstract class Pessoa {
         this.dataNascimento = dataNascimento;
     }
 
-    public abstract String apresentacao();
+    public abstract String getCpf();
+
+    public abstract void setCpf(String cpf);
+
+    public abstract String getNome();
+
+    public abstract void setNome(String nome);
+
+    public abstract String getDataNascimento();
+
+    public abstract void setDataNascimento(String dataNascimento);
 
 }
