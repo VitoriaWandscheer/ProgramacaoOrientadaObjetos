@@ -36,7 +36,7 @@ public class Jogador extends Pessoa{
 
     @Override
     public String toString() {
-        return "Jogador [cpf = " + super.getCpf() + ", nome = " + super.getNome() + ", dataNascimento = " + super.getDataNascimento() + ", posicao = " + this.posicao + ", número = " + this.numero + ", time = " + this.time + "]";
+        return super.getNome() + ": " + this.posicao + " (Camisa: " + this.numero + ")";
     }
     
 }
