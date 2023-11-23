@@ -6,8 +6,12 @@ public class Treinador extends Pessoa{
         this.curriculo = curriculo;
     }
 
-    public String apresentacao(){
-        return "Olá, meu nome é " + super.nome + ", nasci em " + super.dataNascimento + " e sou o(a) treinador(a).";
+    public String getCurriculo() {
+        return curriculo;
+    }
+
+    public void setCurriculo(String curriculo) {
+        this.curriculo = curriculo;
     }
 
 }
