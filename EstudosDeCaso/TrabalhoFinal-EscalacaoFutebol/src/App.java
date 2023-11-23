@@ -30,16 +30,16 @@ public class App {
 
         // Cria Jogadores
         Jogador j1 = new Jogador("11111111111", "Vitoria", "24/04/2002", "Goleira", "10",time1);
-        System.out.println(j1.apresentacao());
+        System.out.println(j1);
 
         Jogador j2 = new Jogador("33333333333", "Dayane", "01/04/2000", "Atacante", "8", time1);
-        System.out.println(j2.apresentacao());
+        System.out.println(j2);
 
         Jogador j3 = new Jogador("55555555555", "Estevam", "24/04/2002", "Goleiro", "7", time2);
-        System.out.println(j3.apresentacao());
+        System.out.println(j3);
 
         Jogador j4 = new Jogador("66666666666", "Pedro", "01/04/2000", "Atacante",  "10", time2);
-        System.out.println(j4.apresentacao());
+        System.out.println(j4);
 
         System.out.println();
 
