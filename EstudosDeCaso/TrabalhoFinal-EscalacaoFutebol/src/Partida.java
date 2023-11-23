@@ -8,4 +8,28 @@ public class Partida {
         this.local = local;
     }
 
+    public int getIdPartida() {
+        return idPartida;
+    }
+
+    public void setIdPartida(int idPartida) {
+        this.idPartida = idPartida;
+    }
+
+    public String getDataHora() {
+        return dataHora;
+    }
+
+    public void setDataHora(String dataHora) {
+        this.dataHora = dataHora;
+    }
+
+    public String getLocal() {
+        return local;
+    }
+
+    public void setLocal(String local) {
+        this.local = local;
+    }
+
 }
