@@ -1,21 +1,11 @@
 public class Time {
-    private int idTime;
     private String nome, estadio;
     private Treinador treinador;
     
-    public Time(int idTime, String nome, String estadio, Treinador treinador) {
-        this.idTime = idTime;
+    public Time(String nome, String estadio, Treinador treinador) {
         this.nome = nome;
         this.estadio = estadio;
         this.treinador = treinador;
-    }
-
-    public int getIdTime() {
-        return idTime;
-    }
-
-    public void setIdTime(int idTime) {
-        this.idTime = idTime;
     }
 
     public String getNome() {
