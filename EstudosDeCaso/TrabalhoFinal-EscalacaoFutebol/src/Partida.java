@@ -50,7 +50,7 @@ public class Partida {
         System.out.println("--------------------------------");
         System.out.println("Data e Hora: " + this.dataHora);
         System.out.println("--------------------------------");
-        System.out.println("Local:" + this.local);
+        System.out.println("Local: " + this.local);
         System.out.println("--------------------------------");
         System.out.println("---------- Escalações ----------");
         System.out.println("--------------------------------");
